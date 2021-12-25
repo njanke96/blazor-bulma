@@ -1,9 +1,12 @@
 @inherits LayoutComponentBase
 
-<div class="">
-    <p>This is a paragraph in the main layout!</p>
-    
-    <main>
-        @Body
-    </main>
-</div>
+<main class="container">
+    <div class="columns">
+        <div class="column is-one-fifth">
+            <NavBar/>
+        </div>
+        <div class="column">
+            @Body
+        </div>
+    </div>
+</main>

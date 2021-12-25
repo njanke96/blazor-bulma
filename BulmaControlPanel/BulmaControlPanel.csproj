@@ -4,15 +4,18 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <EnableDefaultSassItems>false</EnableDefaultSassItems>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="LibSassBuilder" Version="2.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
-    </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Shared" />
+        <SassFile Include="wwwroot/css/app.scss" />
+        <SassFile Include="wwwroot/css/vendor/bulma.sass" />
+        <SassFile Include="Shared/**/*.scss" />
+        <SassFile Include="Pages/**/*.scss" />
     </ItemGroup>
 
 </Project>
