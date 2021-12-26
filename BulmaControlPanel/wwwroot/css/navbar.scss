@@ -1,0 +1,12 @@
+@import "bulma/sass/helpers/color";
+
+.navbar-container {
+  min-width: 240px;
+}
+
+// instead of .navbar because .navbar is reserved by bulma
+.navpane {
+  padding: 1em;
+  background-color: $light;
+  min-height: 100vh;
+}
