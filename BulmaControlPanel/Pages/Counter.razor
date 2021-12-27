@@ -1,4 +1,16 @@
 @page "/counter"
 
+<PageTitle>Counter</PageTitle>
+
 <h1 class="title">Counter</h1>
-<p>Todo</p>
+<p>Current count: @_currentCount</p>
+<button class="button is-link" @onclick="IncrementCount">Click me!</button>
+
+@code
+{
+    private int _currentCount;
+    private void IncrementCount()
+    {
+        _currentCount += 1;
+    }
+}
